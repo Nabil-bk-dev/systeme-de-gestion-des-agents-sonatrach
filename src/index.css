@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#message
+{
+    background-image: url('./img/Design sans titre (5).svg');
+    background-size: cover; /* Pour s'assurer que l'image couvre tout l'arrière-plan */
+    background-position: center; /* Pour centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+}

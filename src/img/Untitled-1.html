@@ -1,0 +1,108 @@
+ <div class="absolute right-3 top-4 h-28 w-32 mt-2">
+                    <div class="absolute left-0 top-0  bg-red-500 rounded-full">
+                      <span class="text-sm text-white p-1">2</span>
+                    </div>
+                    <div
+                      class="p-2"
+                      onClick={() => {
+                        setNotification(!notification);
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="text-gray-600 w-6 h-6"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                      </svg>
+                    </div>
+                  </div>
+                  {notification ? (
+                    <>
+                      <div className="flex absolute w-[200px] right-[130px] top-[-200px]  flex-col justify-center min-h-screen pt-4 min-w-screen">
+                        <div className="w-full max-w-sm mx-auto my-2 overflow-hidden  rounded shadow-sm">
+                          <div className="relative flex items-center justify-between px-2 py-2 font-bold text-white bg-[#F5811E]">
+                            <div className="relative flex items-center">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                className="inline w-6 h-6 mr-2 opacity-75"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
+                                  d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                                />
+                              </svg>
+                              <span>Notification</span>
+                            </div>
+                            <span className="relative">
+                              <svg
+                                onClick={() => {
+                                  setNotification(!notification);
+                                }}
+                                className="w-5 h-5 text-blue-300 fill-current hover:text-white"
+                                role="button"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                              >
+                                <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                              </svg>
+                            </span>
+                          </div>
+                          <div className="p-3 bg-white border border-gray-300 rounded-b">
+                            <div className="flex justify-start mb-2">
+                              <div>
+                                <img
+                                  src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&faces=1&faceindex=1&facepad=2.5&w=500&h=500&q=80"
+                                  className="inline object-cover w-10 h-10 mr-2 rounded-full"
+                                />
+                              </div>
+                              <div>
+                                <p className="font-medium leading-tight text-gray-700">
+                                  John Doe
+                                </p>
+                              </div>
+                            </div>
+                            <div className=" w-full mt-3 text-right flex justify-between ">
+                              <button className="px-3 py-1 font-semibold text-gray-800 bg-white border border-gray-400 rounded-md hover:bg-gray-100 focus:outline-none">
+                                Ignore
+                              </button>
+                              <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none">
+                                Reply
+                              </button>
+                            </div>
+                          </div>
+                          <div className="p-3 bg-white border border-gray-300 rounded-b">
+                            <div className="flex justify-start mb-2">
+                              <div>
+                                <img
+                                  src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&faces=1&faceindex=1&facepad=2.5&w=500&h=500&q=80"
+                                  className="inline object-cover w-10 h-10 mr-2 rounded-full"
+                                />
+                              </div>
+                              <div>
+                                <p className="font-medium leading-tight text-gray-700">
+                                  John Doe
+                                </p>
+                              </div>
+                            </div>
+                            <div className=" w-full mt-3 text-right flex justify-between ">
+                              <button className="px-3 py-1 font-semibold text-gray-800 bg-white border border-gray-400 rounded-md hover:bg-gray-100 focus:outline-none">
+                                Ignore
+                              </button>
+                              <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none">
+                                Reply
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <></>
+                  )}
